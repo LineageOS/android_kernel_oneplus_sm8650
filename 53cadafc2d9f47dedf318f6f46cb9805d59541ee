@@ -16,6 +16,24 @@
       "message": "You can remove it since is only for debugging.",
       "revId": "53cadafc2d9f47dedf318f6f46cb9805d59541ee",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1ba86321_b05233a4",
+        "filename": "modules.vendor_dlkm.list.msm.pineapple",
+        "patchSetId": 1
+      },
+      "lineNbr": 213,
+      "author": {
+        "id": 30975
+      },
+      "writtenOn": "2025-11-26T09:44:26Z",
+      "side": 1,
+      "message": "I prefer to retain it, since Oplus has already included this change, and CLO may also add these changes in future tags",
+      "parentUuid": "b2fb8817_2d356f61",
+      "revId": "53cadafc2d9f47dedf318f6f46cb9805d59541ee",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
