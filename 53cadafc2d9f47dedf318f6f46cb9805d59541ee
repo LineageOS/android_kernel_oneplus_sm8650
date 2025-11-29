@@ -34,6 +34,24 @@
       "parentUuid": "b2fb8817_2d356f61",
       "revId": "53cadafc2d9f47dedf318f6f46cb9805d59541ee",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "37968bde_ad8bacd3",
+        "filename": "modules.vendor_dlkm.list.msm.pineapple",
+        "patchSetId": 1
+      },
+      "lineNbr": 213,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-11-29T14:22:18Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1ba86321_b05233a4",
+      "revId": "53cadafc2d9f47dedf318f6f46cb9805d59541ee",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
