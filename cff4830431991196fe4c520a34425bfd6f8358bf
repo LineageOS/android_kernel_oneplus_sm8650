@@ -16,6 +16,24 @@
       "message": "What about the ASB merge?",
       "revId": "cff4830431991196fe4c520a34425bfd6f8358bf",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "98f65779_8b479c27",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30975
+      },
+      "writtenOn": "2025-12-06T09:37:23Z",
+      "side": 1,
+      "message": "They already merged in lts branch",
+      "parentUuid": "7a48dc69_0ba9dec5",
+      "revId": "cff4830431991196fe4c520a34425bfd6f8358bf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
