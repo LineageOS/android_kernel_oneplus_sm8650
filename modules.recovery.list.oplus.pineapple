@@ -51,6 +51,7 @@ oplus_camera_aw37004.ko
 oplus_charger_present.ko
 oplus_chg_v2.ko
 oplus_ft3683g.ko
+oplus_ft3685g.ko
 oplus_ftm_mode.ko
 oplus_haptic.ko
 oplus_hbp_core.ko
@@ -70,7 +71,6 @@ oplus_sensor_feedback.ko
 oplus_sensor_interact.ko
 oplus_sensor_ir_core.ko
 oplus_sensor_kookong_ir_spi.ko
-oplus_thermal_vendor_hooks.ko
 oplus_wireless_pen.ko
 thermal_pa_adc.ko
 test-kit.ko
