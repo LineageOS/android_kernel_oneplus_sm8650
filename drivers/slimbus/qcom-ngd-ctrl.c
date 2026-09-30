@@ -1854,9 +1854,7 @@ static int qcom_slim_ngd_ssr_pdr_notify(struct qcom_slim_ngd_ctrl *ctrl,
 			"QCOM_SSR_BEFORE_SHUTDOWN", "slim_ngd_ssr_pdr-enter");
 		SLIM_INFO(ctrl, "SLIM SSR Before Shutdown\n");
 		if (ctrl->state != QCOM_SLIM_NGD_CTRL_DOWN) {
-			/* Make sure the last dma xfer is finished */
 			mutex_lock(&ctrl->suspend_resume_lock);
-			mutex_lock(&ctrl->tx_lock);
 			ctrl->state = QCOM_SLIM_NGD_CTRL_SSR_GOING_DOWN;
 			/*
 			 * Mark capability_timeout to false here to handle
@@ -1872,7 +1870,6 @@ static int qcom_slim_ngd_ssr_pdr_notify(struct qcom_slim_ngd_ctrl *ctrl,
 			qcom_slim_ngd_exit_dma(ctrl);
 			ctrl->state = QCOM_SLIM_NGD_CTRL_DOWN;
 			SLIM_INFO(ctrl, "SLIM SSR down\n");
-			mutex_unlock(&ctrl->tx_lock);
 			mutex_unlock(&ctrl->suspend_resume_lock);
 		}
 
@@ -1962,7 +1959,7 @@ static int of_qcom_slim_ngd_register(struct device *parent,
 			of_node_put(node);
 			return ret;
 		}
-		ngd->pdev->dev.of_node = node;
+		ngd->pdev->dev.of_node = of_node_get(node);
 		ctrl->ngd = ngd;
 
 		ret = platform_device_add(ngd->pdev);
